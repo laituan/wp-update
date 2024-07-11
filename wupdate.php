@@ -1,4 +1,4 @@
-add_filter( 'pre_set_site_transient_update_themes', 'wupdates_check_YL6Wd' );
+add_filter( 'pre_set_site_transient_update_themes', 'wupdates_check_YL6Wd', 1, 999999);
 function wupdates_check_YL6Wd( $transient ) 
 {
 		if (empty($transient->checked)) {
